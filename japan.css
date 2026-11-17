@@ -1,0 +1,403 @@
+/* Base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Nunito Sans", sans-serif;
+  background-color: #FFF9F4;
+  color: #4a4440;
+}
+
+
+/* Header */
+
+.site-header {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 140px;
+  transition: opacity 0.3s ease;
+}
+
+.logo:hover img {
+  opacity: 0.75;
+}
+
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.site-nav a {
+  color: #111;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.site-nav a:hover {
+  color: #6F7C12;
+}
+
+
+.site-nav a + a {
+  border-left: 2px solid #111;
+  padding-left: 25px;
+  transition: border-color 0.3s ease;
+}
+
+.site-nav:hover a + a {
+  border-left-color: #6F7C12;
+}
+
+
+
+
+/* Hero section */
+
+
+.japan-hero {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 20px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.japan-hero-text {
+  flex: 1;
+  text-align: left;
+}
+
+.project-label {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #6F7C12;
+   margin: 0 0 7px;
+  font-weight: 500;
+}
+
+.japan-hero-text h1 {
+  font-size: 3rem;
+  margin: 0px 0 25px;
+  font-weight: 500;
+}
+
+.japan-description {
+   max-width: 450px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.japan-hero-image {
+  flex: 1.3;
+ max-width: 750px;
+margin-left: auto;
+}
+
+.japan-hero-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: translateX(20px);
+}
+
+
+
+/* Design showcase */
+
+.japan-showcase {
+  max-width: 1100px;
+  margin: 0 auto;
+ padding: 32px 20px;
+}
+
+
+.japan-showcase-heading h2 {
+  max-width: 650px;
+  font-size: 2.5rem;
+  margin: 0px 0 24px;
+  font-weight: 500;
+}
+
+.japan-showcase-description {
+   max-width: 640px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+
+}
+
+.japan-showcase-images {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+}
+
+.japan-showcase-images img {
+  display: block;
+  width: 100%;
+  height: 350px;
+   object-fit: contain;
+    transform: none;
+}
+
+
+/* Explore the Project */
+
+.japan-explore {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 20px 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+.japan-explore h2 {
+  font-size: 2.5rem;
+  margin: 0px 0 15px;
+  font-weight: 500;
+}
+
+.body-text {
+  max-width: 550px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 0 auto 50px;
+}
+
+
+.japan-prototype-button {
+  display: inline-block;
+  padding: 14px 22px;
+  border: 1px solid #6F7C12;
+  border-radius: 30px;
+  color: #6F7C12;
+  text-decoration: none;
+ transition: background-color 0.2s ease, color 0.2s ease, transform 0.3s ease;
+}
+
+.japan-prototype-button:hover {
+  background-color: #6F7C12;
+  color:  #FFF9F4;
+  transform: translateY(-2px);
+}
+
+
+/* Footer */
+
+.footer-section {
+  width: 100%;
+   background: linear-gradient(225deg, #F1E2E2, #FFF9F4, #e6d6cc);
+}
+
+
+.footer {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 35px 20px 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #bdb4b4;
+}
+
+.footer-brand img {
+  width: 90px;
+  height: auto;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.footer-brand p {
+  margin: 0;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 35px;
+}
+
+.footer-nav a {
+  color: inherit;
+  text-decoration: none;
+  margin-top: -20px;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #6F7C12;
+}
+
+.footer-bottom {
+  padding-top: 15px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+  /* Header */
+
+  .site-header {
+    padding: 16px 20px;
+  }
+
+  .logo img {
+    width: 90px;
+  }
+
+  .site-nav {
+    gap: 12px;
+  }
+
+  .site-nav a {
+    font-size: 0.95rem;
+  }
+
+  .site-nav a + a {
+    padding-left: 12px;
+  }
+
+
+  /* Hero */
+
+  .japan-hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    padding: 20px 20px 30px;
+  }
+
+  .japan-hero-text {
+    text-align: center;
+  }
+
+
+  .japan-hero-text h1 {
+    font-size: 2.5rem;
+    margin: 5px 0 15px;
+  }
+
+  .japan-hero-text p {
+    font-size: 1.05rem;
+    margin: 0 auto;
+  }
+
+  .japan-hero-image {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .japan-hero-image img {
+    transform: none;
+  }
+
+
+
+  /* Design Showcase */
+
+.japan-showcase {
+  padding: 25px 20px;
+}
+
+.japan-showcase-heading h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.japan-showcase-description {
+  font-size: 1.05rem;
+  margin-bottom: 25px;
+}
+
+.japan-showcase-images {
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.japan-showcase-images img {
+  height: auto;
+  max-height: 350px;
+}
+
+
+/* Design Explore */
+
+.japan-explore {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 15px;
+  padding: 40px 20px 50px;
+}
+
+.japan-explore h2 {
+  font-size: 2rem;
+  margin: 0 0 15px;
+}
+
+.body-text {
+  font-size: 1.05rem;
+  margin-bottom: 30px;
+}
+
+.japan-prototype-button {
+  margin-top: 0px;
+}
+
+
+/* Footer */
+
+.footer {
+  padding: 30px 20px 20px;
+}
+
+.footer-content {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 25px;
+}
+
+.footer-brand img {
+  margin: 0 auto 15px;
+}
+
+.footer-nav {
+  gap: 25px;
+}
+
+.footer-nav a {
+  margin-top: 0;
+}
+
+.footer-bottom {
+  font-size: 0.85rem;
+}
+
+}

@@ -1,0 +1,485 @@
+
+/* Base */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Nunito Sans", sans-serif;
+  background-color: #FFF9F4;
+  color: #4a4440;
+}
+
+
+/* Header */
+
+.site-header {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 140px;
+  transition: opacity 0.3s ease;
+}
+
+.logo:hover img {
+  opacity: 0.75;
+}
+
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.site-nav a {
+  color: #111;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.site-nav a:hover {
+  color: #6F7C12;
+}
+
+
+.site-nav a + a {
+  border-left: 2px solid #111;
+  padding-left: 25px;
+  transition: border-color 0.3s ease;
+}
+
+.site-nav:hover a + a {
+  border-left-color: #6F7C12;
+}
+
+
+
+/* Hero */
+
+.rooted-hero {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0px 20px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.rooted-hero-text {
+  flex: 1;
+}
+
+.project-label {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #6F7C12;
+   margin: 0 0 7px;
+  font-weight: 500;
+}
+
+.rooted-hero h1 {
+  font-size: 3.5rem;
+  margin: 0px;
+  font-weight: 500;
+}
+
+.hero-description {
+  max-width: 350px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.rooted-hero-images {
+  flex: 1.4;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.laptop-mockup {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  transform: translateX(20px);
+}
+
+.mobile-mockup {
+  position: absolute;
+  width: 23%;
+  height: auto;
+  left: 0;
+  bottom: -5%;
+}
+
+
+/* Section 1 */
+
+.rooted-overview {
+  max-width: 1100px;
+  margin: 0 auto;
+ padding: 32px 20px;
+}
+
+.rooted-overview h2 {
+  max-width: 600px;
+  font-size: 2.5rem;
+  margin: 0px 0 24px;
+  font-weight: 500;
+}
+
+.overview-description {
+  max-width: 600px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+
+.overview-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  align-items: center;
+}
+
+.overview-images img {
+  display: block;
+  width: 100%;
+  height: 350px;
+  object-fit: contain;
+  transform: none;
+}
+
+
+
+/* Design process */
+
+.rooted-process {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 20px;
+}
+
+.rooted-process h2 {
+  font-size: 2.5rem;
+  margin: 0px 0 40px;
+  font-weight: 500;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 35px;
+}
+
+.process-card {
+  border: 1px solid #e5ddd2;
+  border-radius: 16px;
+  padding: 30px;
+}
+
+.process-card h3 {
+  font-size: 1.5rem;
+  margin: 0 0 20px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #e5ddd2;
+  font-weight: 500;
+}
+
+.process-card p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+
+/* Explore Project */
+
+.rooted-links {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 20px 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.rooted-links h2 {
+  font-size: 2.5rem;
+  margin: 0px 0 15px;
+  font-weight: 500;
+}
+
+.body-text {
+  max-width: 550px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 0 auto 50px;
+}
+
+.rooted-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+
+
+.rooted-buttons a {
+  display: inline-block;
+  padding: 14px 22px;
+  border: 1px solid #6F7C12;
+  border-radius: 30px;
+  color: #6F7C12;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.3s ease;
+}
+
+.rooted-buttons a:hover {
+  background-color: #6F7C12;
+  color:  #FFF9F4;
+  transform: translateY(-2px);
+}
+
+
+
+/* Footer */
+
+.footer-section {
+  width: 100%;
+   background: linear-gradient(225deg, #F1E2E2, #FFF9F4, #e6d6cc);
+}
+
+
+.footer {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 35px 20px 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #bdb4b4;
+}
+
+.footer-brand img {
+  width: 90px;
+  height: auto;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.footer-brand p {
+  margin: 0;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 35px;
+}
+
+.footer-nav a {
+  color: inherit;
+  text-decoration: none;
+  margin-top: -20px;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #6F7C12;
+}
+
+.footer-bottom {
+  padding-top: 15px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+
+
+@media (max-width: 768px) {
+
+  /* Header */
+
+  .site-header {
+    padding: 16px 20px;
+  }
+
+  .logo img {
+    width: 90px;
+  }
+
+  .site-nav {
+    gap: 12px;
+  }
+
+  .site-nav a {
+    font-size: 0.95rem;
+  }
+
+  .site-nav a + a {
+    padding-left: 12px;
+  }
+
+
+  /* Hero */
+
+  .rooted-hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    padding: 20px 20px 30px;
+  }
+
+  .rooted-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-description {
+    font-size: 1.05rem;
+    margin: 10px auto 0;
+  }
+
+  .rooted-hero-images {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .laptop-mockup {
+    transform: none;
+  }
+
+  .mobile-mockup {
+    width: 23%;
+  }
+
+
+
+  /* Section 1 */
+
+.rooted-overview {
+  padding: 25px 20px;
+}
+
+.rooted-overview h2 {
+  font-size: 2rem;
+  margin: 10px 0 15px;
+}
+
+.overview-description {
+  font-size: 1.05rem;
+}
+
+
+.overview-images {
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.overview-images img {
+  height: auto;
+  max-height: 350px;
+}
+
+
+/* Design Process */
+
+.rooted-process {
+  padding: 25px 20px;
+}
+
+.rooted-process h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+.process-grid {
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.process-card {
+  padding: 22px;
+}
+
+.process-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+}
+
+
+
+/* Explore Project */
+
+.rooted-links {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px 50px;
+  gap: 15px;
+}
+
+.rooted-links h2 {
+  font-size: 2rem;
+  margin: 0 0 10px;
+}
+
+.body-text {
+  font-size: 1.05rem;
+    margin-bottom: 30px;
+}
+
+.rooted-buttons {
+  justify-content: center;
+  gap: 12px;
+}
+
+
+.footer {
+  padding: 30px 20px 20px;
+}
+
+.footer-content {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 25px;
+}
+
+.footer-brand img {
+  margin: 0 auto 15px;
+}
+
+.footer-nav {
+  gap: 25px;
+}
+
+.footer-nav a {
+  margin-top: 0;
+}
+
+.footer-bottom {
+  font-size: 0.85rem;
+}
+
+}
+
